@@ -1,740 +1,449 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-html, body {
-    margin: 0 auto;
-    padding: 0;
-    overflow-x: hidden;
-    max-width: 1024px;
+ /* google font */
+ @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Oswald:wght@200;300;400;500;600;700&family=Pacifico&family=Roboto:wght@700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Oswold', sans-serif;
 }
 
-h1 h2 h3 h4 h5 h6 {
-    font-family: 'Oswald', sans-serif; font-weight: 500px;
-}
-section{
-    padding: 80px 0px;
-}
-div{
-    display: block;
+body{
+    margin: 0;
 }
 
-
-element.style {
-}
-@media (min-width: 1200px)
-.container {
-    max-width: 1140px;
-}
-@media (min-width: 992px)
-.container {
-    max-width: 960px;
-}
-@media (min-width: 768px)
-.container {
-    max-width: 720px;
-}
-@media (min-width: 576px)
-.container {
-    max-width: 540px;
-}
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    
+h1{
+    font-size: 2.5rem;
+    text-align: center;
 }
 
-
-
-.topbermain{
-    position: relative;
-    background:#f5f5f5;
-    /* overflow: hidden; */
-    }
-
-    .container{
-        width: 1140px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin: auto;
-    }
-    .phone {
-        width: 280px;
-        float: left;
-        border-right:1px solid #ddd ;
-        border-left: 1px solid #ddd;
-    }
-    
-    .email {
-        width: 496px;
-        float: left;
-    }
-    
-    .social {
-        width: 155px;
-        float: left;
-        /* overflow: hidden; */
-    }
-    .topberwrapper {
-        overflow: hidden;
-    }
-    .social a{display:block;
-        float:left;
-        padding:18px;
-        border-left:1px solid #ddd ;
-        color:#000;
-        
+h2{
+    font-size: 1.5rem;
+    text-align: center;
 }
-.social i:hover{
-    color:rgb(255, 52, 52);
+a{
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+p{
+    font-size: 1.2rem;
+    text-align: justify;
 }
 
-.social a:last-child{
-    border-right:1px solid #ddd ;
+.dotted-hr{
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 70px;
 }
-.social a i {
-    color: blue;
-}
-.phone i{
-    color: rgb(255, 107, 107);
-    padding: 18px;
-}
-.email i{color: rgb(255, 107, 107);
-padding: 18px;}
 
-.primaywrepper {
-    overflow: hidden;
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* for mobile  */
+[class*="col-"]{
     width: 100%;
 }
 
-.logo {
-    float: left;
-    width: 148px;
+
+/* navbar design starts here  */
+
+.navbar{
+    background-color: #40868b;
+    padding: 1% 7%;
+    text-align: center;
 }
 
-.menu {
-    float: left;
-    width: 859px;
+.navbar h1{
+    color: rgb(250, 176, 176);
+    margin: 0;
+    padding-top: 10px;
+    font-family: 'Akaya Telivigala', cursive;
 }
 
-ul.mainmenuitem {
-    list-style: none;
-    float: right;
-}
-
-ul.mainmenuitem li{
-    float:left;
-}
-ul.mainmenuitem li a {
-    text-decoration: none;
-    font-family: 'Oswald', sans-serif;
-}
-ul.mainmenuitem li a {
-    text-decoration: none;
-    font-family: 'Oswald', sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    display: block;
-    color: #6a3838;
-    padding: 13px 19px;
-    transition:0.5s;
-}
-
-ul.mainmenuitem li a:hover{
-    color: rgba(255, 53, 53, 0.952);
-}
-
-ul.mainmenuitem li a.red{
-    color: rgb(255, 27, 27);
-}
-/* fast section */
-#homeslider{
-
-        background: url(image/background.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        padding: 0px;
-        background-size: cover;
-}
-.slidercontent {
-    color: white;
-    width: 868px;
-}
-
-.slidercontent h1 {
-    font-size: 66px;
-    font-weight: 700;
+.navbar-menu{
+    display: flex;
+    flex-direction: column;
     text-transform: uppercase;
-    margin-bottom: 30px;
-    margin-top: 163px;
-    float: left;
-}
-.slidercontent p {
-    
-    font-weight: 600;
-    line-height: 20px;
-    width: 418px;
-    margin-bottom:30px;
-}
-button#sliderworkbutten {
-    color: #ffffff;
-    background: #e93737;
-    border: none;
-    padding: 15px 25px;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 5px;
-    margin-bottom: 118px;
-}
-button#sliderworkbutten:hover {
-    background: black;
 }
 
-.slidernav{
-    width: 60px;
-    margin: auto;
-    padding: 40px 0px;
+.navbar-menu a{
+    background-color: #0c6168;
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 10px;
 }
 
-.slidernav span {
-    width: 7px;
-    height: 7px;
-    background: transparent;
-    border: 2px solid #ddd;
-    display: block;
-    border-radius: 100%;
-    cursor: pointer;
-    float: left;
-    margin: 5px 5px;
+.navbar-menu a:hover{
+    background-color: gray;
 }
-.slidernav span:last-child{
-    background: #ff5200;
-    border-color:#ff5200 ;
+
+
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
 }
-/* 2nd box */
-#services{
-    background: #f5f6f6;}
-.sboxwrapper {
-        overflow: hidden;
-    }
-    
-    .singlebox {
-        width: 220px;
-        background: white;
-        padding: 15px;
-        float: left;
-        margin-right: 30px;
-        transition:0.5s;
-    }
-    .singlebox:hover{
-        background: rgb(255, 101, 101);
-        color: #ffffff;
-        cursor:pointer;
-    }
-    .singlebox i{
-        color: rgb(255, 96, 96);
-    }
-    .singlebox:hover h2, i{
-        color:#ffffff;
-    }
-    .singlebox:hover .sboxicon i{
-        color: #ffffff;
-    }
-    .singlebox:hover .sboxlink a{
-        color:#ffffff !important ;
-    }
-    .singlebox:hover i.fas.fa-arrow-right{
-        color: white;
-    }
-    
- .sboxtitle {
-        text-align: center;
-        width: 150px;
-    margin: auto;
-    }
-.sboxtitle h2 {
-        font-size: 20px;
-        letter-spacing: -1.1px;
-        color: #333;
-        line-height: 28px;
-        text-transform: uppercase;
-        margin: 20px 0px;
-    }
-    .sboxicon {
-        color: #fb8175;
-        text-align: center;
-        padding: 25px 0px;
-        font-size: 40px;
-    }
-    .sboxdesc {
-        text-align: center;
-        padding: 25px 0px;
-    }
-    
-    .sboxlink {
-        text-align: center;
-        margin: 25px 0px;
-    }
-    
-    .sboxlink a {
-        text-decoration: none;
-        color: #ff3f3f;
-        font-weight: 500;
-    }
 
-    .sboxactive{
-        background: #ff5200;
-        color: #ffffff;
-    }
-    .sboxactive h2{
-        color: #ffffff;
-    }
-    .sboxactive a{
-        color: #ffffff;
-    }
-    .sboxactive i{
-        color: #ffffff;
-    }
-    i.fas.fa-arrow-right {
-        color: rgb(255, 85, 85);
-    }
+/* navbar design ends here  */
 
-    /* 3nd box */
-    .teamcontents {
-        overflow: hidden;
-    }
-    
-    .teamimage {
-        width: 535px;
-        float: left;
-    }
-    
-    .teamimage img {
-        max-width: 100%;
-    }
-    
-    .teamdetails {
-        width: 535px;
-        float: right;
-    }
-    .tilltedesc h2 {
-        font-size: 34px;
-        margin-bottom: 15px;
-    }
-    
-    .tilltedesc p {color: #666;line-height: 1.5;margin-bottom: 25px;}
+    /* profile starts from here */
 
-    .teamfacilities ul {
-        margin: 0px;
-        padding: 0px;
-        width: 260px;
-        float: left;
-        list-style: none;
-    }
-    
-    .teamfacilities ul li {
-        line-height: 40px;
-        transition: 0.5s;
-    }
-    .teamfacilities ul li a {
-        color: #666;
-        text-decoration: none;
-        font-weight: 500;
+     .profile{
+         padding: 130px 10px;
+         position: relative;
+         text-align: center;
+     }
 
-    }
-    .teamfacilities ul li:hover a{
-        color: #ff3f3f;
-    }
-    .teamfacilities ul li:hover  i.fas.fa-chevron-right{
-        color: #ff3f3f;
-    }
-    .teamfacilities {
-        overflow: hidden;
-        margin-bottom: 25px;
-    }
-    .teamfacilities ul li a i.fas.fa-chevron-right {
-        color:#666;
-        font-size: 15px;
-    }
-    .teamcontactbtn a {
-        text-decoration: none;
-        background: red;
-        color: #ffffff;
-        font-weight: 700;
-        padding: 15px;
-        border-radius: 7px;
-        font-size: 20px;
-        display: block;
-        width: 117px;
-        text-align: center;
-       transition: 0.5s;
-    }
-    .teamcontactbtn a:hover{
-        background: rgb(0, 0, 0);
-        color: #ffffff;
-    }
-
-    /* 4nd Box */
-    #whychoosus{
-        background:linear-gradient(#04040454,#1616168a), url(image/homee.jpg);
-        background-repeat:no-repeat ;
-        background-size: cover;
-        background-position: center center;
-    }
-
-    .iconwrappre {
-        overflow: hidden;
-    }
-    
-    .singleicon {
-        width: 250px;
-        text-align: center;
-        color: #ffffff;
-        float: left;
-        margin: 25px ;
-    }
-    .sicon {
-        font-size: 40px;
-    }
-    
-    .singleicon h1 {
-        font-size: 50px;
-        font-weight: 700;
-        margin: 15px 0px;
-    }
-    
-    .singleicon h4 {
-        font-size: 20px;
-    }
-/*   
-    5nd Box */
-
-    #blogposts{
-        background: #f7f7f7;
-    }
-    .sectitle {
-        text-align: center;
-       
-        margin-bottom: 40px;
-    }
-    
-    .sectitle h2 {
-        font-size: 40px;
-        margin-bottom: 10px;
-        position: relative;
-        padding-bottom: 20px;
-    }
-    
-    .sectitle h2:after {
-        content: "";
+     .profile .top-icon{
+         position: absolute;
+         right: 60px;
+         top: 20px;
+         transition: transform 2s;
+         width: 150px;
+         height: 100px;
+     }
+     .profile .top-icon:hover{
+        
+         transform: rotate(360deg);
+     }
+     .profile-desc p{
+         color: gray;
+         margin: 0 auto 20px auto;
+         text-align: center;
+         width: 90%;
+     }
+     
+     .profile-desc h1{
+        font-family: 'Akaya Telivigala', cursive;
+        font-size: 3rem;
+     }
+     .profile .buttom-icon{
         position: absolute;
-        bottom: 0;
-        background: #ff2525;
-        width: 80px;
-        border-bottom: 4px solid red;
-        left: 50%;
-        transform: translate( -44px);
+        left: 60px;
+        bottom: 20px;
+        transition: transform 2s;
+        width: 150px;
+        height: 100px;
     }
-    
-    .sectitle p {
-        font-size: 20px;
-        width: 611px;
-        margin: auto;
-        line-height: 30px;
+    .profile .buttom-icon:hover{
+       
+        transform: rotate(360deg);
+    }
+    .profile::after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+    /* profile ends here */
+
+    /* About me starts here */
+    .about-me{
+        background: rgb(139, 194, 66);
+        color: aliceblue;
+        padding: 1% 7%;
+        text-align: center;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 500;
     }
 
-    .postwrapper {
-        overflow: hidden;
-    }
-    
-    .singlepost {
-        width: 259px;
-        overflow: hidden;
-        float: left;
-        margin-right: 25px;
-    }
-    
-    .singlepost img {
-        width: 100%;
-    }
-    
-    .postimg {
-        margin-bottom: 20px;
-    }
-    
-    .postinfo p {
-        margin-top: 10px;
-        line-height: 25px;
-        color: #666;
+
+
+    .about-me::after{
+        content: '';
+        display: table;
+        clear: both;
     }
 
-    /* 7 section box */
-    .singletable {
-        overflow: hidden;
-        width: 350px;
-        border: 1px solid #ededed;
-        float: left;
-        padding: 20px;
+    .aboutme-image img{
+        border: 2px solid rgb(120, 76, 155);
+        border-radius: 50px;
+        width: 200px;
+        height: 220px;
     }
-    
-    .singletable h3 {
-        font-size: 27px;
+
+    .about-me p{
+        text-align: center;
     }
-    
-    .singletable h1 {
-        font-size: 43px;
-        font-weight: 700;
-        margin: 11px 0px;
-    }
-    
-    .singletable h1 span {
-        font-size: 20px;
-        font-weight: 600;
-    }
-    .singletable ul {
-        list-style: none;
-    }
-    
-    .singletable ul li {
-        line-height: 35px;
-        color: #777;
-    }
-    .singletable ul li i {
-        color: #3ba4ff;
-        font-size: 13px;
-        padding-right: 10px;
-    }
-    
-    
-.singletable {
-    overflow: hidden;
-    width: 313px;
-    border: 1px solid #ededed;
-    float: left;
-    padding: 20px;
-    margin-right: 25px;
-}
-    
-    button#tabelbutton {
-        background: #ff6a6a;
+
+    .cv-button{
+        background: #151e1f;
         color: #ffffff;
         border: none;
-        padding: 15px 20px;
-        font-size: 20px;
-        text-transform: uppercase;
+        border-radius: 5px;
+        padding: 15px;
+        cursor:pointer;
+        text-align: center;
+        margin: 10px;
+        transition: 0.5s;
+        font-family: 'Work Sans', sans-serif;
         font-weight: 600;
-        margin-top: 23px;
-        border-radius: 3px;
     }
-    button#tabelbutton:hover {
-        background: #000;
+    .cv-button:hover{
+        background:#4d4d4d;
+        color: #4decf1;
     }
-    .tablelist {
-         overflow: hidden;
-        box-shadow: -1px 2px 16px 12px #c7c3c3;
+
+
+    /* About me ends here  */
+    /* professional experience start here */
+    .profe{
+        padding: 1% 0%;
+    }
+    .profe .card{
+        background: #acacac;
+        border-radius: 5px;
+        padding: 15px;
+        height: 650px;
+        transition: 0.5s;
+    }
+
+    .profe .card:hover{
+        box-shadow: 0 4px 6px 5px black;
+
+    }
+    .card-icon{
+        text-align: center;
+    }
+    .card-icon img{
+        height: 100px;
         
     }
-
-    /* 8 no section box */
-
-    .liftimg{
-        background: url(image/000000000.jpg);
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
+    .rounded-img{
+        border: 5px solid #ffffff;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    .card-tittle h2{
+        background: #8b7e7e;
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
     }
 
-    section#ideas {
-        overflow: hidden;
+    .sk-contan{
+        padding-right: 45px ;
+    }
+
+    .sk-contan ul li{
+        list-style: none;
+        font-weight: 500;
+        margin: 30px 10px;
         position: relative;
-        padding: 0;
-        height: 100%;
     }
-    
-    .liftimg {
-        width: 50%;
-        float: left;
+
+    .sk-contan ul li::before{
         position: absolute;
+        content: '';
+        top: calc(100% + 5px);
         left: 0;
-        top: 0;
-        height: 100%;
-    }
-    
-    .rightcontent {
-        width: 50%;
-        float: right;
-        overflow: hidden;
-        background: #222222;
-        color: #ffff;
+        background-color: #0c606859;
+        width: 100%;
+        height: 10px;
+        border-radius: 1000px;
+        }
+    .sk-contan ul li::after{
+        position: absolute;
+        content: '';
+        top: calc(100% + 5px);
+        left: 0;
+        background-color: #0c6068;
+        width: 0;
+        height: 10px;
+        border-radius: 1000px;
+
+        animation-duration: 3s;
+        animation-delay: 2s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 3 ;
     }
 
-    .rcontenttitle {
-        padding: 70px;
-        padding-bottom: 0px;
-        margin-bottom: 40px;
+    .sk-contan li.html::after{
+        animation-name: html;
     }
-    
-    .rcontenttitle h1 {
-        font-size: 35px;
-        margin-bottom: 20px;
-    }
-    
-    .rcontenttitle p {
-        font-size: 20px;
-        line-height: 31px;
-    }
-    
-    
-    
-    .riconsingle {
-        width: 400px;
-        overflow: hidden;
-        float: left;
-        margin-bottom: 70px;
-    }
-    
-    .ricons {
-        overflow: hidden;
-        float: left;
-        width: 70px;
-        font-size: 50px;
-    }
-    
-   
-    
-    .rcontenticons {
-        padding: 0px 70px;
-        overflow: hidden;
-        padding-bottom: 75px;
-       
-    }
-    
-    .ricontitle {
-        width: 314px;
-        float: right;
-        overflow: hidden;
-       
-        
-    }
-    .ricontitle  h2:hover{
-        color:#ff6a6a;;
+    @keyframes html{
+        to{
+            width: 90%;
+        }
     }
 
-    .ricontitle h2 {
-        margin-bottom: 10px;
+    .sk-contan li.css::after{
+        animation-name: css;
+    }
+    @keyframes css{
+        to{
+            width: 80%;
+        }
+    }
+
+    .sk-contan li.boot::after{
+        animation-name: boot;
+    }
+    @keyframes boot{
+        to{
+            width: 50%;
+        }
+    }
+
+    .sk-contan li.js::after{
+        animation-name: js;
+    }
+    @keyframes js{
+        to{
+            width: 69%;
+        }
+    }
+
+
+    .sk-contan li.jq::after{
+        animation-name: jq;
+    }
+    @keyframes jq{
+        to{
+            width: 49%;
+        }
+    }
+
+    .sk-contan li.node::after{
+        animation-name: node;
+    }
+    @keyframes node{
+        to{
+            width: 34%;
+        }
+    }
+
+    .sk-contan li.express::after{
+        animation-name: express;
+    }
+    @keyframes express{
+        to{
+            width: 24%;
+        }
+    }
+
+    .sk-contan li.git::after{
+        animation-name: git;
+    }
+    @keyframes git{
+        to{
+            width: 94%;
+        }
+    }
+
+    .sk-contan li.react::after{
+        animation-name: react;
+    }
+    @keyframes react{
+        to{
+            width: 29%;
+        }
+    }
+
+
+
+    .profe::after{
+        content: '';
+        display: table;
+        clear:both;
+
+    }
+
+    /* professional experience ends here */
+
+    /* contact-me starts form here  */
+    #contact-me{
+        padding: 1% 7%;
+        background: rgba(250, 74, 74, 0.726);
+        color: #ffffff;
+    }
+
+    .contact{
+       text-align: center;
+    }
+
+    .contact input, textarea{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        resize: none;
+
+    }
+
+    .contact button{
+        border: none;
+        border-radius: 40px;
+        background: #1c7881;
+        color: #ffffff;
+        padding: 15px;
+        width: 100px;
+        margin: 10px;
         transition: 0.5s;
         cursor: pointer;
+        
     }
 
-    .ricons i{
-        color: #ff7c5f;
+    .contact button:hover{
+        background-color: #1c813285;
     }
-    footer#footer {
-        background: #161616;
-        padding-top: 200px;
+
+    .contact-links{
+        text-align: center;
     }
-    
-    .copyrightcontainer {
-        overflow: hidden;
-        color: #999;
-        border-top: 1px solid #ffffff63;
-    }
-    
-    .copyrightcontainer .container {
-        overflow: hidden;
-    }
-    
-    .copyrighttext {
-        width: 489px;
-        float: left;
-        padding: 25px;
-    }
-    
-    .copyrightmenu {
-        width: 571px;
-        float: right;
-        /* padding: 25px 10px; */
-    }
-    
-    .copyrightmenu ul {
-        list-style: none;
-        float: right;
-        overflow: hidden;
-    }
-    
-    .copyrightmenu ul li {
-        float: left;
-    }
-    .copyrightmenu ul li a {
-        color: #999;
-        display: block;
-        padding: 25px 22px;
-        text-decoration: none;
-    }
-    .fboxwrapper {
-        overflow: hidden;
-        padding-bottom: 60px;
-    }
-    
-    .fbox {
-        overflow: hidden;
-        width: 379px;
-        float: left;
-        color: #999;
-    }
-    
-    .fbox h3 {
-        color: #f5f2f2;
-        margin-bottom: 20px;
-    }
-    
-    .fbox p {
-        line-height: 25px;
-        font-size: 19px;
-        margin-bottom: 22px;
-    }
-    span#contacts {
-        display: block;
-        margin-bottom: 18px;
-        font-size: 16px;
-    }
-    
-    span#contacts i {
-        color: #f22;
-        margin-right: 15px;
-    }
-    ul#uflink {
-        list-style: none;
-    }
-    
-    ul#uflink li {line-height: 25px;}
-    
-    ul#uflink li a {
-        text-decoration: none;
-        color: #999;
-        display: block;
-        padding: 7px 0px;
-        border-bottom: 1px dashed #99999978;
-    }
-    
- 
-    
-    ul#uflink li:last-child a{
-        border-bottom: none;
-    }
-    .ficons i {
-        padding: 14px;
-        color: #999;
+    .buicon .btn{
+        border: none;
+        border-radius: 25%;
         cursor: pointer;
-        transition: 0.5s;    }
-    
-    .ficons i:hover {
-        color: #ff1919;
+        font-size: 32px;
+        width: 50px;
+        padding: 5px;
+        margin: 10px;
+        background: #ffffff;
+        
     }
 
-   .container{
-      
-            background:fixed;
-   }
+    .btn:hover{
+        background-color: #e3e1e1;
+    }
 
+    #contact-me::after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    /* contact-me ends for here  */
+
+    /* footer starts for here  */
+    #footer{
+        background-color: #151e1f;
+        color: #ffffff;
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer-titel a{
+        display: block;
+        margin: 15px 0;
+        transition: 0.2s;
+    }
+    .footer-titel a:hover{
+         color: #d4d3d3;
+    }
+    
+    
+    #footer::after{
+        display: table;
+        content: '';
+        clear: both;
+    }
+
+
+
+
+    /* footer ends for here  */
