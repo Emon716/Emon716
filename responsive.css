@@ -1,0 +1,166 @@
+@media (max-width:768px){
+    header{
+        width: 100%;
+        height: auto;
+    }
+    header .logo{
+        margin-left: 30px;
+        padding: 20px;
+    }
+    .checkbtn{
+        display: block !important;
+    }
+  
+
+    header .nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f9f9ff;
+        top: 54px;
+        left: -200%;
+        transition: all .1s ;
+    }
+
+    header .nav ul li{
+        line-height: 30px;
+        clear: both;
+        margin-top: 15px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    header .nav ul li a{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* ============== */
+    .section1{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .half1{
+        margin: auto;
+        padding: 0;
+    }
+    .half1 h3{
+        font-size: 15px;
+    }
+    .half1 h1{
+        font-size: 25px;
+    }
+    .half2 img{
+        margin-left: 90px;
+        margin-top: 30px;
+        max-width: 100%;
+        height: auto;
+    }
+    /* =================  */
+    .section2{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        top: 150px;
+        position: relative;
+    }
+    .section2 .img2 img{
+        position: relative;
+        right: 270px;
+    }
+    .section2 div{
+        width: 100%;
+    }
+    .text2{
+        position: relative;
+        left: 15px;
+        text-align: center !important;
+    }
+
+    /* =======================  */
+    .sec3{
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 500px;
+    }
+    .firsttext>h1{
+        font-size: 30px;
+        
+    }
+    .firsttext>p{
+        width: 80%; 
+    }
+    .ser1 div, .ser2 div{
+        clear: left;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    
+  /* ===================== */
+  .sec4 {
+        display: none;
+  }
+  .sect5{
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: 550px;
+  }
+  .text3 h1{
+      font-size: 30px;
+  }
+/* ====================== */
+.sect6{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 550px;
+}
+.card{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    left: 150px;
+}
+/* ======================= */
+
+.about{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 185em;
+}
+.text0 h1{
+    font-size: 25px;
+}
+.conter{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* ================================ */
+
+footer{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 175em;
+}
+footer .foot{
+    
+    display: block;
+    position: relative;
+    top: 100px;
+}
+
+
+
+
+
+
+
+}

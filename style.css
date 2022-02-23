@@ -1,449 +1,476 @@
- /* google font */
- @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Oswald:wght@200;300;400;500;600;700&family=Pacifico&family=Roboto:wght@700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-*{
-    box-sizing: border-box;
-    font-family: 'Oswold', sans-serif;
-}
-
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* --------------------------------  */
 body{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    /* line-height: 1.625em; */
+    
 }
 
-h1{
-    font-size: 2.5rem;
-    text-align: center;
+/* header style start here  */ 
+header{
+    width:100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 1;
 }
-
-h2{
-    font-size: 1.5rem;
-    text-align: center;
+.header-scrolled {
+    transition: all 0.5s;
+    box-shadow: -21.213px 21.213px 30px 0px rgb(158 158 158 / 30%);
 }
-a{
-    color: rgb(255, 255, 255);
-    font-size: 1.2rem;
-    text-decoration: none;
-}
-p{
-    font-size: 1.2rem;
-    text-align: justify;
-}
-
-.dotted-hr{
-    border: dotted 6px white;
-    border-bottom: none;
-    margin: 20px auto;
-    width: 70px;
-}
-
-[class*="col-"]{
+header >div{
     float: left;
-    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
 }
+header > .logo{
+    margin-left: 200px;
+    padding: 20px;
+}
+header > .nav{
+    position: absolute;
+    top:0;
+    right: 0;
+    margin-right:200px; 
+}
+header >.nav ul{
+    list-style: none;
+}
+header >.nav ul li{
+    float: left;
+    padding-right:40px;
+    padding-top: 10px;
+}
+header >.nav ul li a{
+    text-decoration: none;
+    color:#222;
+    text-transform: uppercase;
+    font-size: 12;
+    transition: 0.5s;
+    font-weight: 500;
+    
+}
+header >.nav ul li a:hover{
+    color:#8490FF;
+}
+.checkbtn{
+    display: none;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.9);
+    float: right;
+    line-height:  70px ;
+    margin-right: -170px ;
+}
+#check{
+    display: none;
+}
+/* header style ends here  */ 
 
-/* for mobile  */
-[class*="col-"]{
+/* section one start from here  */
+.section1{
+    background: #F9F9FF;
     width: 100%;
+    height: 665px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 75px;
 }
-
-
-/* navbar design starts here  */
-
-.navbar{
-    background-color: #40868b;
-    padding: 1% 7%;
+.half1, .half2{
+    width: 50%;
+}
+.half1{
+    margin-left: 230px;
+    margin-bottom: 120px;
+}
+.half2{
+    padding-right: 160px;
+    margin-top: 50px;
+}
+.half2> img{
+    max-width: 100%;
+    height: auto;
+}
+.half1 h3{
+    font-weight: normal;
+}
+.half1 h1 {
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 23px;
+}
+.half1 p{
+    color: rgba(173, 173, 173,0.7);
+}
+ .but{
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 42px;
+    color: #fff;
+    background-color: #8194FF;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.5s ease-in 0.1s ;
+}
+.but:hover{
+    box-shadow:  5px 10px 30px rgba(130, 147, 255,0.5);
+}
+/* section one Ends from here  */
+/* ============================================ */
+/* section Two start from here  */
+.section2{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section2 >div{
+    width: 40%;
+    margin: 0 auto;
+}
+.section2 img{
+    width: 71%;
+    height: auto;
+}
+.section2 .img2{
+   padding-left: 150px;
+   margin-top: 100px;
+   margin-right: -330px;
+}
+.text2 h4 {
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 15px;
+}
+.text2 h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.text2 p{
+    font-size: 15px;
+    color: rgba(0,0 ,0 ,0.6 );
+    width: 88%;
+}
+/* section Two ends from here  */
+/* =================================== */
+/* section three start from here  */
+.sec3{
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
     text-align: center;
 }
-
-.navbar h1{
-    color: rgb(250, 176, 176);
-    margin: 0;
-    padding-top: 10px;
-    font-family: 'Akaya Telivigala', cursive;
+.firsttext >h1{
+    font-size: 30px;
+    line-height: 10px;
+}
+.firsttext p{
+    width: 670px;
+    color: #777;
+    margin: 0 auto;
+}
+.service{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 45px ;
+}
+.ser1 .ser2{
+    width: 100%;
+    overflow: hidden;
 }
 
-.navbar-menu{
+.ser1 div, .ser2 div{
+    width: 32%;
+    float: left;
+    padding: 5px;
+
+}
+.ser2 div{
+    padding-top: 35px ;
+}
+.service i{
+    font-size: 35px;
+    color: #222;
+    transition: all 0.3s ease;
+}
+.service i:hover{
+    color: #8490FF;
+}
+.service h4:hover{
+    color: #8490FF;
+}
+.service h4{
+    font-size: 18px;
+    color: #222222;
+    transition: all 0.3s ease;
+}
+.service p{
+    color: rgba(0,0 ,0 ,0.6 );
+}
+
+
+/* section three ends here  */
+/* ================================ */
+/* section four start here  */
+.sec4{
+    width: 100%;
+    background-color: #7E99FF;
+    height: 300px;
+}
+.sec4>div{
+    float: left;
+    width: 20%;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    left: 300px;
+
+}
+.sec4 div h1{
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 0px;
+}
+.sec4 div p{
+    color: #fff;
+    
+}
+.sec4 div h1 p{
+   text-align: center;
+}
+/* section four ends here  */
+/* portfolio part start here  */
+.sect5{
+    width: 100%;
+    box-sizing: border-box;
+    
+
+}
+.text3{
+    text-align: center;
+    margin-bottom: 150px;
+    margin-top: 120px;
+}
+.text3 h1 {
+    font-size: 34px;
+    color: rgba(0,0 ,0 ,0.9 );
+    margin-top: 80px;
+}
+.text3 p {
+    color: rgba(0,0 ,0 ,0.6 );
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+.sect5 .imgg{
+    width: 69%;
+    height: auto;
     display: flex;
-    flex-direction: column;
-    text-transform: uppercase;
-}
-
-.navbar-menu a{
-    background-color: #0c6168;
-    border-radius: 10px;
-    margin: 7px 0px;
-    padding: 10px;
-}
-
-.navbar-menu a:hover{
-    background-color: gray;
-}
-
-
-.navbar::after{
-    content: '';
-    display: table;
-    clear: both;
-}
-
-/* navbar design ends here  */
-
-    /* profile starts from here */
-
-     .profile{
-         padding: 130px 10px;
-         position: relative;
-         text-align: center;
-     }
-
-     .profile .top-icon{
-         position: absolute;
-         right: 60px;
-         top: 20px;
-         transition: transform 2s;
-         width: 150px;
-         height: 100px;
-     }
-     .profile .top-icon:hover{
-        
-         transform: rotate(360deg);
-     }
-     .profile-desc p{
-         color: gray;
-         margin: 0 auto 20px auto;
-         text-align: center;
-         width: 90%;
-     }
-     
-     .profile-desc h1{
-        font-family: 'Akaya Telivigala', cursive;
-        font-size: 3rem;
-     }
-     .profile .buttom-icon{
-        position: absolute;
-        left: 60px;
-        bottom: 20px;
-        transition: transform 2s;
-        width: 150px;
-        height: 100px;
-    }
-    .profile .buttom-icon:hover{
-       
-        transform: rotate(360deg);
-    }
-    .profile::after{
-        content: '';
-        display: table;
-        clear: both;
-    }
-    /* profile ends here */
-
-    /* About me starts here */
-    .about-me{
-        background: rgb(139, 194, 66);
-        color: aliceblue;
-        padding: 1% 7%;
-        text-align: center;
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 500;
-    }
-
-
-
-    .about-me::after{
-        content: '';
-        display: table;
-        clear: both;
-    }
-
-    .aboutme-image img{
-        border: 2px solid rgb(120, 76, 155);
-        border-radius: 50px;
-        width: 200px;
-        height: 220px;
-    }
-
-    .about-me p{
-        text-align: center;
-    }
-
-    .cv-button{
-        background: #151e1f;
-        color: #ffffff;
-        border: none;
-        border-radius: 5px;
-        padding: 15px;
-        cursor:pointer;
-        text-align: center;
-        margin: 10px;
-        transition: 0.5s;
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 600;
-    }
-    .cv-button:hover{
-        background:#4d4d4d;
-        color: #4decf1;
-    }
-
-
-    /* About me ends here  */
-    /* professional experience start here */
-    .profe{
-        padding: 1% 0%;
-    }
-    .profe .card{
-        background: #acacac;
-        border-radius: 5px;
-        padding: 15px;
-        height: 650px;
-        transition: 0.5s;
-    }
-
-    .profe .card:hover{
-        box-shadow: 0 4px 6px 5px black;
-
-    }
-    .card-icon{
-        text-align: center;
-    }
-    .card-icon img{
-        height: 100px;
-        
-    }
-    .rounded-img{
-        border: 5px solid #ffffff;
-        border-radius: 50%;
-        padding: 5px;
-    }
-    .card-tittle h2{
-        background: #8b7e7e;
-        color: #ffffff;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .sk-contan{
-        padding-right: 45px ;
-    }
-
-    .sk-contan ul li{
-        list-style: none;
-        font-weight: 500;
-        margin: 30px 10px;
-        position: relative;
-    }
-
-    .sk-contan ul li::before{
-        position: absolute;
-        content: '';
-        top: calc(100% + 5px);
-        left: 0;
-        background-color: #0c606859;
-        width: 100%;
-        height: 10px;
-        border-radius: 1000px;
-        }
-    .sk-contan ul li::after{
-        position: absolute;
-        content: '';
-        top: calc(100% + 5px);
-        left: 0;
-        background-color: #0c6068;
-        width: 0;
-        height: 10px;
-        border-radius: 1000px;
-
-        animation-duration: 3s;
-        animation-delay: 2s;
-        animation-timing-function: linear;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 3 ;
-    }
-
-    .sk-contan li.html::after{
-        animation-name: html;
-    }
-    @keyframes html{
-        to{
-            width: 90%;
-        }
-    }
-
-    .sk-contan li.css::after{
-        animation-name: css;
-    }
-    @keyframes css{
-        to{
-            width: 80%;
-        }
-    }
-
-    .sk-contan li.boot::after{
-        animation-name: boot;
-    }
-    @keyframes boot{
-        to{
-            width: 50%;
-        }
-    }
-
-    .sk-contan li.js::after{
-        animation-name: js;
-    }
-    @keyframes js{
-        to{
-            width: 69%;
-        }
-    }
-
-
-    .sk-contan li.jq::after{
-        animation-name: jq;
-    }
-    @keyframes jq{
-        to{
-            width: 49%;
-        }
-    }
-
-    .sk-contan li.node::after{
-        animation-name: node;
-    }
-    @keyframes node{
-        to{
-            width: 34%;
-        }
-    }
-
-    .sk-contan li.express::after{
-        animation-name: express;
-    }
-    @keyframes express{
-        to{
-            width: 24%;
-        }
-    }
-
-    .sk-contan li.git::after{
-        animation-name: git;
-    }
-    @keyframes git{
-        to{
-            width: 94%;
-        }
-    }
-
-    .sk-contan li.react::after{
-        animation-name: react;
-    }
-    @keyframes react{
-        to{
-            width: 29%;
-        }
-    }
-
-
-
-    .profe::after{
-        content: '';
-        display: table;
-        clear:both;
-
-    }
-
-    /* professional experience ends here */
-
-    /* contact-me starts form here  */
-    #contact-me{
-        padding: 1% 7%;
-        background: rgba(250, 74, 74, 0.726);
-        color: #ffffff;
-    }
-
-    .contact{
-       text-align: center;
-    }
-
-    .contact input, textarea{
-        width: 100%;
-        padding: 10px;
-        text-align: center;
-        font-size: 1rem;
-        border: none;
-        border-radius: 5px;
-        resize: none;
-
-    }
-
-    .contact button{
-        border: none;
-        border-radius: 40px;
-        background: #1c7881;
-        color: #ffffff;
-        padding: 15px;
-        width: 100px;
-        margin: 10px;
-        transition: 0.5s;
-        cursor: pointer;
-        
-    }
-
-    .contact button:hover{
-        background-color: #1c813285;
-    }
-
-    .contact-links{
-        text-align: center;
-    }
-    .buicon .btn{
-        border: none;
-        border-radius: 25%;
-        cursor: pointer;
-        font-size: 32px;
-        width: 50px;
-        padding: 5px;
-        margin: 10px;
-        background: #ffffff;
-        
-    }
-
-    .btn:hover{
-        background-color: #e3e1e1;
-    }
-
-    #contact-me::after{
-        content: '';
-        display: table;
-        clear: both;
-    }
-
-    /* contact-me ends for here  */
-
-    /* footer starts for here  */
-    #footer{
-        background-color: #151e1f;
-        color: #ffffff;
-        font-size: 0.8rem;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .footer-titel a{
-        display: block;
-        margin: 15px 0;
-        transition: 0.2s;
-    }
-    .footer-titel a:hover{
-         color: #d4d3d3;
-    }
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
     
+}
+.sect5 .imgg div{
+    width: 417px;
+    height: 414px;
+    padding-bottom: 40px;
+
+}
+.sect5 .imgg h1{
+    font-size: 20px;
+    color:rgba(0,0 ,0 ,0.9 );
+    line-height: 0;
+    text-align: center;
+}
+.sect5 .imgg p{
     
-    #footer::after{
-        display: table;
-        content: '';
-        clear: both;
-    }
+    color:rgba(0,0 ,0 ,0.6);
+    text-align: center;
+    
+}
+.sect5 figure{
+   background: linear-gradient(40deg, #7E99FF 40%, #687bbe 100%);     
+   width: 340px;
+   height: 337px;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   border-radius: 3%;
+   
+}
+.sect5 figure:hover img{
+    opacity:0.3;
+    transition: all 0.3s ease;
+    
+}
 
+/* portfolio part ends here  */
+/* <!-- pricing table start here  --> */
+.sect6{
+    width: 100%;
+    height: 850px;
+    
+}
+.text4{
+    text-align: center;
+    padding: 2% 0;
+}
+.text4 h1{
+    font-size: 40px;
+    line-height: 0;
+    padding-top: 15px;
+}
+.text4 p{
+    color: rgba(155, 142, 142,0.8);
+}
+.card{
+    width: 75%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.caed1{
+    width: 352px;
+    height: 607px;
+    background-color: #d3d3fa77;
+    text-align: center;
+    border-radius: 3%;
+    
+}
+.caed1 h1{
+    font-size: 50px;
+    padding-top: 8px;
+}
+.caed1 input{
+    outline: none;
+    background-color:#ffffff ;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    padding: 6px 60px;
+    font-weight: bold;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.caed1:hover{
+    background-color: #7E99FF;
+    color: #fff;
+    transition: all .23s ease-in ;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5);
+}
+/* <!-- pricing table ends here  --> */
+/* footer start here  */
+footer{
+    background-color: #04091E;
+    color: #fff;
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    position: absolute;
+}
+.foot{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+.foot1:first-child{
+    width: 380px;
+}
+.foot1 p{
+    color: #777;
+}
+.foot1 input{
+    font-size: 15px;
+    outline: none;
+    border: none;
+    padding: 10px 150px 10px 10px;
+}
+.foot1 button{
+    font-size: 18px ;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #7E99FF;
+    padding: 8px 15px ;
+}
+.foot1 i{
+    font-size: 20px;
+    cursor: pointer;
+    padding: 2px 5px;
+}
+.foot1 i:hover{
+    color: #8194FF;
+    transition: all .3s ease-in;
+}
+/* footer ends here  */
+/* about start here  */
+.about{
+    width: 100%;
+    height: 550px;
+    background-color: #F9F9FF;
+}
+.text0{
+    text-align: center;
+    padding: 2% 0;
+}
+.text0 h1{
+    font-size: 40px;
+    line-height: 0;
+    padding-top: 15px;
+}
+.conter{
+    width: 65%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+.con1{
+    width: 600px;
+    height: 180px;
+    background-color: #ffffff;
+    
+    border-radius: 15px;
+    cursor: pointer;
+}
+.thumb {
+    float: left;
+    padding-top: 16px;
+    margin-right: 50px;
+    margin-left: 30px;
+    height: 150px;
+}
+.thumb img{
+    width: 40px;
+}
+.desc h4{
+    font-size: 23px;
+    line-height: 0;
 
+}
+.desc h4:hover{
+    color: #7E99FF;
+    transition: all .3s;
+}
+.con1:hover{
+    box-shadow: 0 8px 12px 0 rgb(0 0 0 / 50%);
+}
+/* about Ends here  */
 
-
-    /* footer ends for here  */
